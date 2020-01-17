@@ -87,6 +87,15 @@ iframe {
     justify-content: space-between;
     row-gap: 10px
 }
+.products-wrapper.flex-container{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.products-info.flex-container{
+    display: block;
+    text-align: center;
+
+}
 
 .icon{
     background-repeat: no-repeat;
@@ -218,6 +227,7 @@ iframe {
     line-height: 52px;
     text-transform: uppercase;
     transition:0.7s;
+    cursor: pointer;
 }
 .btn:hover{
     color:#fff;
@@ -226,9 +236,18 @@ iframe {
 .form-wrapper .btn:last-child{
     display: none;
 }
+.main-products .btn:first-child{
+    margin-right: 15px;
+}
 .form-wrapper .btn-group{
     margin-top: 50px;
 }
+.main-products .btn-group{
+    justify-content: center;
+    display: flex;
+
+}
+
 /* page-bar */
 
 .page-bar{
@@ -254,7 +273,9 @@ iframe {
 /* page Hero */
 .page-hero {
     padding: 30px 0;
-    background: linear-gradient(to top, #120e1c 64%, #100c1a 70%, rgba(7, 3, 18, 0) 100%) center center no-repeat, url(../img/header-bg.png) center center no-repeat;
+    background-image:linear-gradient(to top, #120e1c 64%, #100c1a 70%, rgba(7, 3, 18, 0) 100%), url(../img/header-bg.png); 
+    background-position: center center;
+    background-repeat: no-repeat;
     background-size: cover;
 }
 .page-nav {
@@ -614,6 +635,93 @@ input[type=checkbox]:checked + label .checkbox-styled::after{
     height: 100%;
 }
 
+/* /* Produkty html ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; */
+
+.flex-item:not(:first-child){
+    margin-top: 20px;
+}
+.info{
+    margin-top: 50px;
+}
+.products-wrapper{
+    margin-top: 80px;
+}
+.products-wrapper a{
+    margin-top: 20px;
+    max-width:420px;
+}
+.products-info .text{
+    max-width: 560px;
+    margin:20px auto 0;
+    
+}
+.card{
+    display: flex;
+}
+.card-img-wrapper{
+    flex-shrink: 0;
+    width: 150px;
+    min-height: 150px;
+}
+.card-img-wrapper img{
+    width: 100%;
+    height: 100%;
+}
+.card-content{
+    width: 100%;
+    min-height: 150px;
+    padding: 30px;
+    background-color: #1e1929;
+}
+.card-price{
+    display: inline-block;
+    margin-top: 15px;
+}
+.card-heading{
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.info{
+    width: 100%;
+}
+.direction-info-day{
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+    font-family: Oswald;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding:0 20%;
+}
+.page-pagination{
+    margin-top: 65px;
+    display: flex;
+    justify-content: center;
+}
+.page-pagination a{
+    margin:0.1px;    
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 3px solid #2b253b;
+    background-color: transparent;
+    text-align: center;
+    line-height: 34px;
+    color:#fff;
+    transition: 0.7s;
+}
+.page-pagination a:nth-child(even){
+    border-color:transparent;
+}
+.page-pagination a:hover{
+    z-index: 10;
+    border-color:#cd30be;
+
+}
+
 /* Page footer */
 .page-footer{
     border-top: 1px solid #2b253b;
@@ -644,6 +752,10 @@ input[type=checkbox]:checked + label .checkbox-styled::after{
     /* utilities */
     .details-currently .text, .details-future .text {
         font-size: 15px;
+    }
+
+    .card-content{
+        padding: 40px;
     }
 }
 @media screen and (min-width:550px){
@@ -705,7 +817,7 @@ input[type=checkbox]:checked + label .checkbox-styled::after{
 
     /* page hero */
     .page-hero {
-        background: linear-gradient(to top, #120e1c 29%, #100c1a 37%, rgba(7, 3, 18, 0) 70%) center center no-repeat, url(../img/header-bg.png) center center no-repeat;
+        background-image: linear-gradient(to top, #120e1c 40%, #100c1a 48%, rgba(7, 3, 18, 0) 80%), url(../img/header-bg.png) , url(../img/header-bg.png) ;
     }
     .page-hero-content {
         padding: 140px 0 170px;
@@ -774,6 +886,64 @@ input[type=checkbox]:checked + label .checkbox-styled::after{
         margin-top: 60px;
     }
 }
+@media screen and (min-width:800px){
+    /* utilities */
+    .products-info.flex-container{
+        display: flex;
+        justify-content: space-around
+    }
+      /* produkty html ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+    .products-info .text{
+        margin:20px 0;
+    }
+ 
+    .direction-info-day{
+        text-align: left;
+        padding:0;
+    }
+    .info{
+        margin-top: 20px;
+        width: initial;
+    }
+    .flex-item:nth-child(2){
+        padding: 0 15px;
+        width:50%;
+        flex-shrink: 0;
+    }
+    .direction-info-day span{
+        display: none;
+    }
+    .md-d-block{
+        display: block;
+    }
+
+     /* CARD                  :::::                     :::                         ::: */
+    .products-wrapper a{
+        max-width:305px;
+        min-width:250px;
+        width:24%;
+        margin:5px;
+    }
+    .card{
+        flex-direction: column;
+        height: 100%;
+    }
+    .card-img-wrapper{
+        width: 100%;
+        min-height: initial;
+        height: 130px;
+    }
+    .card-content{
+        min-height: 130px;
+        height: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 30px;
+    }
+}
 @media screen and (min-width:900px){
 
     /* utilities */
@@ -790,7 +960,7 @@ input[type=checkbox]:checked + label .checkbox-styled::after{
     }
     /* page-hero */
     .page-hero{
-        background: linear-gradient(to top, #120e1c 10%, #100c1a 15%, rgba(7, 3, 18, 0) 50%) center center no-repeat, url(../img/header-bg.png) center center no-repeat;
+        background-image: linear-gradient(to top, #120e1c 10%, #100c1a 15%, rgba(7, 3, 18, 0) 50%) , url(../img/header-bg.png) ;
     }
 
     /* .dreamvoyage-section */
@@ -806,15 +976,13 @@ input[type=checkbox]:checked + label .checkbox-styled::after{
     .approval-field{
         padding-left: 300px;
     }
-    
     .form-label{
         width:300px;
-        margin-bottom: ;
+        margin-bottom:0 ;
     }
     .form-control{
         width:50%;
     }
-    
     .video-wrapper {
         height: 474px;
     }
@@ -831,7 +999,7 @@ input[type=checkbox]:checked + label .checkbox-styled::after{
 @media screen and (min-width:1000px){
 
     .page-hero{
-        background: linear-gradient(to top, #120e1c 10%, #100c1a 15%, rgba(7, 3, 18, 0) 65%) center center no-repeat, url(../img/header-bg.png) center center no-repeat;
+        background-image: linear-gradient(to top, #120e1c 10%, #100c1a 15%, rgba(7, 3, 18, 0) 65%) , url(../img/header-bg.png) ;
     }
     .hero-title{
         font-size: 120px;
