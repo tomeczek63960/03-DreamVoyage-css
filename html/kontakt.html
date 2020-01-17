@@ -23,9 +23,10 @@
                         <span class="text-violet"> DARMOWA DOSTAWA OD</span> 200 PLN
                     </p>
                 </div>
-                <div class="bar-contact">
+                <div class="bar-contact flex-container">
                     <a href="tel:500333444" class="icon icon-phone-violet">500 333 444</a>
-                    <a href="mailto:biuro@elbutito.com" class="icon icon-mail-violet">biuro@elbutito.com</a>
+                    <a href="mailto:biuro@elbutito.com"
+                        class="icon icon-mail-violet text-lowercase ">biuro@elbutito.com</a>
                 </div>
             </div>
         </div>
@@ -59,7 +60,7 @@
     <div class="center-wrapper">
         <div class="flex-container">
             <aside class="aside">
-                <div class="side-navbar">
+                <div class="side-navbar text-heading">
                     <a href="#">dane kontaktowe</a>
                     <a href="#">formularz kontaktowy</a>
                     <a href="#">jak dojechać</a>
@@ -92,34 +93,36 @@
                                 hello@dreamvoyage.eu
                             </p>
                         </div>
-                        <div class=" text open-hours-wrapper">
-                            <strong class="text-white"></strong>
-                            <table class="open-hours">
-                                <tr>
-                                    <td>Poniedziałek</td>
-                                    <td>10:00 - 16:00</td>
-                                </tr>
-                                <tr>
-                                    <td>Wtorek</td>
-                                    <td>8:00 - 16:00</td>
-                                </tr>
-                                <tr>
-                                    <td>Środa</td>
-                                    <td>8:00 - 16:00</td>
-                                </tr>
-                                <tr>
-                                    <td>Czwartek</td>
-                                    <td>8:00 - 16:00</td>
-                                </tr>
-                                <tr>
-                                    <td>Piątek</td>
-                                    <td>8:00 - 16:00</td>
-                                </tr>
-                                <tr>
-                                    <td>Sobota</td>
-                                    <td>8:00 - 12:00</td>
-                                </tr>
-                            </table>
+                        <div class="text open-hours-wrapper">
+                            <strong class="text-white">Godziny otwarcia</strong>
+                            <div class="negative-margin">
+                                <table class="open-hours">
+                                    <tr>
+                                        <td>Poniedziałek</td>
+                                        <td>10:00 - 16:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Wtorek</td>
+                                        <td>8:00 - 16:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Środa</td>
+                                        <td>8:00 - 16:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Czwartek</td>
+                                        <td>8:00 - 16:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Piątek</td>
+                                        <td>8:00 - 16:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sobota</td>
+                                        <td>8:00 - 12:00</td>
+                                    </tr>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -171,13 +174,13 @@
                                 <div class="radio-field">
                                     <input type="radio" name="contactform[client]" id="contactform[client]-yes"
                                         value="yes">
-                                    <label for="contactform[client]-yes">
+                                    <label for="contactform[client]-yes" class="light-label text-uppercase">
                                         <span class="radio-styled"></span>
                                         Tak
                                     </label>
                                     <input type="radio" name="contactform[client]" id="contactform[client]-no"
                                         value="no">
-                                    <label for="contactform[client]-no">
+                                    <label for="contactform[client]-no" class="light-label text-uppercase">
                                         <span class="radio-styled"></span>
                                         Nie
                                     </label>
@@ -187,48 +190,48 @@
                         </div>
                         <!-- -- -->
                         <!-- -- -->
-                        <div class="form-field-wrapper">
+                        <div class="form-field-wrapper contact-day-field">
                             <div class="form-field flex-container">
                                 <span class="form-label required">Preferowany dzień kontaktu:</span>
-                                <div class="grid-container">
+                                <div class="grid-container contact-day-wrapper">
                                     <div class="grid-item">
                                         <input type="checkbox" name="contactform[contactday][]" id="monday">
-                                        <label for="monday">
+                                        <label for="monday" class='light-label'>
                                             <span class="checkbox-styled"></span>
                                             poniedziałek
                                         </label>
                                     </div>
                                     <div class="grid-item">
                                         <input type="checkbox" name="contactform[contactday][]" id="tuesday">
-                                        <label for="tuesday">
+                                        <label for="tuesday" class='light-label'>
                                             <span class="checkbox-styled"></span>
                                             wtorek
                                         </label>
                                     </div>
                                     <div class="grid-item">
                                         <input type="checkbox" name="contactform[contactday][]" id="wednesday">
-                                        <label for="wednesday">
+                                        <label for="wednesday" class='light-label'>
                                             <span class="checkbox-styled"></span>
                                             środa
                                         </label>
                                     </div>
                                     <div class="grid-item">
                                         <input type="checkbox" name="contactform[contactday][]" id="thursday">
-                                        <label for="thursday">
+                                        <label for="thursday" class='light-label'>
                                             <span class="checkbox-styled"></span>
                                             czwartek
                                         </label>
                                     </div>
                                     <div class="grid-item">
                                         <input type="checkbox" name="contactform[contactday][]" id="friday">
-                                        <label for="friday">
+                                        <label for="friday" class='light-label'>
                                             <span class="checkbox-styled"></span>
                                             piątek
                                         </label>
                                     </div>
                                     <div class="grid-item">
                                         <input type="checkbox" name="contactform[contactday][]" id="saturday">
-                                        <label for="saturday">
+                                        <label for="saturday" class='light-label'>
                                             <span class="checkbox-styled"></span>
                                             sobota
                                         </label>
@@ -239,7 +242,7 @@
                         </div>
                         <!-- -- -->
                         <!-- -- -->
-                        <div class="form-field-wrapper">
+                        <div class="form-field-wrapper textarea-field">
                             <div class="form-field flex-container">
                                 <label for="contactform[message]" class="form-label required">Wiadomość</label>
                                 <textarea name="contactform[message]" id="contactform[message]"
@@ -249,12 +252,11 @@
                         </div>
                         <!-- -- -->
                         <!-- -- -->
-                        <div class="form-field-wrapper">
+                        <div class="form-field-wrapper approval-field">
                             <div class="form-field flex-container">
                                 <!-- Zrobić zeby był równy padding z -lewej strony zeby było można form-labela nie dawać tu i btn-wrapperze -->
-                                <span class="form-label"></span>
                                 <input type="checkbox" name="contactform[approval]" id="contactform[approval]">
-                                <label for="contactform[approval]">
+                                <label for="contactform[approval]" class="light-label">
                                     <span class="checkbox-styled"></span>
                                     Zgadzam się z regulaminem serwisu
                                 </label>
@@ -270,9 +272,11 @@
                 </section>
                 <section class="info-section map-section">
                     <h4 class="heading heading-2">Jak do nas dojechać</h4>
-                    <div class="map-wrapper">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d156389.09520485083!2d20.921111025866267!3d52.23285504175909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecc669a869f01%3A0x72f0be2a88ead3fc!2sWarszawa!5e0!3m2!1spl!2spl!4v1579172748848!5m2!1spl!2spl"></iframe>
+                    <div class="negative-margin">
+                        <div class="map-wrapper">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d156389.09520485083!2d20.921111025866267!3d52.23285504175909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecc669a869f01%3A0x72f0be2a88ead3fc!2sWarszawa!5e0!3m2!1spl!2spl!4v1579172748848!5m2!1spl!2spl"></iframe>
+                        </div>
                     </div>
                 </section>
             </article>
@@ -280,7 +284,7 @@
     </div>
     <footer class="page-footer">
         <div class="center-wrapper">
-            <div class="flex-container">
+            <div class="flex-container footer-content">
                 <div class="col">
                     <p class="text-heading">O nas</p>
 
@@ -311,10 +315,10 @@
                     <p class="text-heading">Social media</p>
 
                     <div class="text-footer">
-                        <a href="#" class="icon icon-fb-white ">Facebook</a>
-                        <a href="#" class="icon icon-twitter-white">Twitter</a>
-                        <a href="#" class="icon icon-in-white">Linkedin</a>
-                        <a href="#" class="icon icon-google-white">G+</a>
+                        <a href="#" class="icon social-icon icon-fb-white ">Facebook</a>
+                        <a href="#" class="icon social-icon icon-twitter-white">Twitter</a>
+                        <a href="#" class="icon social-icon icon-in-white">Linkedin</a>
+                        <a href="#" class="icon social-icon icon-google-white">G+</a>
                     </div>
                 </div>
             </div>
@@ -329,7 +333,7 @@
             </div>
         </div>
     </footer>
-
+    <script src="../js/menuToggler.js"></script>
 </body>
 
 </html>
