@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 *{
     margin:0;
     padding:0;
@@ -50,10 +53,6 @@ iframe {
 }
 .flex-container{
     display: flex;
-}
-
-.flex-container.justify-between {
-
 }
 
 .page-bar .flex-container {
@@ -120,7 +119,7 @@ iframe {
     display: inline-block;
     width: 15px;
     height: 15px;
-    text-indent:-99999px;
+    text-indent:-99999px;   
 }
 .icon-fb-white{
     background-image: url(../img/icon/icon-fb-white.svg) ;
@@ -542,6 +541,7 @@ iframe {
     margin-top: 30px;
 }
 .error-wrapper{
+    margin-top: 10px;
     color: #db3d3d;;
     font-size: 0.875rem;
 }
@@ -994,7 +994,7 @@ input[type=checkbox]:checked + label .checkbox-styled::after{
 
      /* CARD                  :::::                     :::                         ::: */
     .products-wrapper a{
-        max-width:305px;
+        max-width:280px;
         min-width:250px;
         width:24%;
     }
@@ -1033,6 +1033,9 @@ input[type=checkbox]:checked + label .checkbox-styled::after{
     .form-wrapper .btn-group{
         padding-left: 300px;
     }
+    .error-wrapper{
+        padding-left: 300px;
+    }
     /* page-hero */
     .page-hero{
         background-image: linear-gradient(to top, #120e1c 10%, #100c1a 15%, rgba(7, 3, 18, 0) 50%) , url(../img/header-bg.png) ;
@@ -1048,7 +1051,7 @@ input[type=checkbox]:checked + label .checkbox-styled::after{
         width: 50%;
         margin-top: 0;
     }
-    .approval-field{
+    .approval-field .form-field{
         padding-left: 300px;
     }
     .form-label{
@@ -1124,7 +1127,15 @@ input[type=checkbox]:checked + label .checkbox-styled::after{
     .form-label{
         width: 350px;
     }
-
+    .error-wrapper{
+        padding-left: 350px;
+    }
+    .approval-field{
+        padding-left: 0;
+    }
+    .approval-field .form-field{
+        padding-left: 350px;
+    }
     /* Map section */
     .map-section{
         margin-top: 125px;
